@@ -1,5 +1,5 @@
 const {MongoClient, ObjectId} = require('mongodb');
-const uri = "mongodb+srv://sa:admin123@cluster0.1joai.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = process.env['MongoDBURI'];
 const client = new MongoClient(uri);
 const _ = require('lodash');
 const dot = require('mongo-dot-notation');
