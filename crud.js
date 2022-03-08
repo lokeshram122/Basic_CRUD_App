@@ -1,4 +1,5 @@
 const {MongoClient, ObjectId} = require('mongodb');
+require('dotenv').config({path:__dirname+'\\.env'})
 const uri = process.env['MongoDBURI'];
 const client = new MongoClient(uri);
 const _ = require('lodash');
