@@ -130,7 +130,7 @@ async function insertuser(client,user)
     try 
     {
        var result = await client.db('crud').collection('users').insertOne(user);
-       Message="User Inserted"+result.insertedId
+       Message=result.insertedId
     } 
     catch (error) 
     {
